@@ -34,6 +34,10 @@ header .logo{
   width: 25%;
 }
 
+header .logo img{
+  width: 100%;
+}
+
 header .link{
   width: 50%;
 }
@@ -58,8 +62,13 @@ header .login a{
   text-align: center;
 }
 
+header .login a:hover{
+  background-color: rgb(229, 226, 226);
+  text-decoration: underline;
+}
+
 header .container .row{
-  height: 50px;           /*debug*/
+  min-height: 50px;           /*debug*/
   align-items: center;
 }
 
@@ -74,13 +83,18 @@ header nav ul a{
   padding: 0 10px;
   display: inline-block;
 }
+
+header nav ul a:hover{
+  color: rgb(229, 226, 226);
+  text-decoration: underline;
+}
+
 /*/top*/
 
 /*jambo*/
 .jambo{
   background-image: url(../../img/jumbo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +104,6 @@ header nav ul a{
   width: 57%;
   max-width: 1100px;
   margin: 0 auto;
-  min-height: 200px;      /*debug*/
   text-align: center;
   color: white;
   padding-top: 20px;
@@ -111,9 +124,10 @@ header nav ul a{
 }
 
 .container-jambo .link{
-  display: inline-block;
+  display: flex;
   font-size: 14px;
   width: 100%;
+  justify-content: center;
 }
 
 .container-jambo .link a{
@@ -126,6 +140,12 @@ header nav ul a{
   background-color: white;
   color: black;
   padding: 10px 10px;
+  display: inline-block;
+}
+
+.container-jambo .link a:hover{
+  background-color: rgb(229, 226, 226);
+  text-decoration: underline;
 }
 
 .container-jambo .link .browser{
@@ -134,7 +154,11 @@ header nav ul a{
   border-radius: 25px;
   background-color: rgb(34,40,42);
   margin: 0 30px;
-  display: inline-block;
+}
+
+.container-jambo .link .browser:hover{
+  background-color: rgb(58, 59, 59);
+  text-decoration: underline;
 }
 /*/jambo*/
 /*/header*/
@@ -143,28 +167,23 @@ header nav ul a{
 /*section-study*/
 .study{
   display: flex;
-  align-items: center;
-  min-height: 400px;       /*debug*/
+  align-items: center; 
 }
 
 .container-study{
   width: 80%;
   max-width: 1100px;
   margin: 50px auto;
-  background-color: green;
-  min-height: 300px;      /*debug*/
   display: flex;
 }
 
 main .study-img{
   width: 60%;
-  background-color: rgb(24, 124, 191);
   padding: 150px 50px;
 }
 
 main .study-text{
   width: 40%;
-  background-color: rgb(219, 144, 157);
   padding-top: 170px;
   padding-left: 60px;
   padding-right: 60px;
@@ -187,7 +206,6 @@ main .study-p{
 .dove{
   display: flex;
   align-items: center;
-  min-height: 400px;       /*debug*/
   background-color: lightgray;
 }
 
@@ -195,19 +213,20 @@ main .study-p{
   width: 80%;
   max-width: 1100px;
   margin: 50px auto;
-  min-height: 300px;      /*debug*/
   display: flex;
 }
 
 main .dove-img{
   width: 60%;
-  background-color: rgb(24, 124, 191);
   padding: 150px 0px;
+}
+
+main .dove-img img{
+  width: 100%;
 }
 
 main .dove-text{
   width: 40%;
-  background-color: rgb(219, 144, 157);
   padding-top: 170px;
   padding-left: 60px;
   padding-right: 60px;
@@ -236,19 +255,20 @@ main .dove-p{
   width: 80%;
   max-width: 1100px;
   margin: 50px auto;
-  min-height: 300px;      /*debug*/
   display: flex;
 }
 
 main .fandom-img{
   width: 60%;
-  background-color: rgb(24, 124, 191);
   padding: 150px 0px;
+}
+
+main .fandom-img img{
+  width: 100%;
 }
 
 main .fandom-text{
   width: 40%;
-  background-color: rgb(219, 144, 157);
   padding-top: 170px;
   padding-left: 60px;
   padding-right: 60px;
@@ -269,7 +289,6 @@ main .fandom-p{
 /*tecnologia*/
 .tecnologia{
   background-color: lightgray;
-  min-height: 500px;      /*debug*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,8 +298,6 @@ main .fandom-p{
   width: 80%;
   max-width: 1100px;
   margin: 50px auto;
-  background-color: green;
-  min-height: 400px;       /*debug*/
   text-align: center;
 }
  .title-tec{
@@ -296,14 +313,18 @@ main .fandom-p{
   margin: 0 60px;
  }
 
+ .img-tec img{
+  width: 100%;
+ }
+
  .cda{
   font-size: 25px;
   margin-bottom: 25px;
   margin-top: 25px;
   min-height: 60px;
   background-image: url(../../img/stars.svg);
+  background-size: 60%;
   background-repeat: no-repeat;
-  background-size: contain;
  }
 
  .cda-link{
@@ -318,6 +339,10 @@ main .fandom-p{
   background-color: rgb(142, 162,226);
   color: white;
 }
+ .cda-link  a:hover{
+  text-decoration: underline;
+  background-color: rgb(186, 197, 233);
+}
 /*/tecnologia*/
 /*/main*/
 
@@ -326,7 +351,6 @@ main .fandom-p{
 .speak{
   display: flex;
   align-items: center;
-  min-height: 500px;       /*debug*/
   background-color: rgba(0, 0, 0, 0.921);
 }
 
@@ -334,40 +358,33 @@ main .fandom-p{
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  min-height: 450px;      /*debug*/
   display: flex;
   color: white;
 }
 
 footer .col-speak{
   width: calc(100% - 760px);
-  background-color: rgb(24, 124, 191);
 }
 
 footer .prodotto{
   width: 190px;
-  background-color: rgb(219, 144, 157);
 }
 
 footer .compagnia{
   width: 190px;
-  background-color: rgb(219, 217, 144);
 }
 
 footer .risorse{
   width: 190px;
-  background-color: rgb(156, 20, 166);
 }
 
 footer .norme{
   width: 190px;
-  background-color: rgb(33, 96, 43);
 }
 /*/section-speak*/
 
 /*section-logo-footer*/
 .foot{
-  min-height: 100px;   /*debug*/
   background-color: rgba(0, 0, 0, 0.921);
   display: flex;
   align-items: flex-end;
@@ -380,23 +397,112 @@ footer .norme{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;     /*debug*/
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .container-foot{
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  background-color: yellow;
-  min-height: 50px;    /*debug*/
 }
 
-footer .foot-logo{
-  border: 1px solid black;
-  background-color: rgb(192, 83, 83);
+
+footer .registrati a{
+  border: 1px solid rgb(142, 162,226);
+  background-color: rgb(142, 162,226);
+  border-radius: 25px;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
 }
 
-footer .registrati{
-  border: 1px solid black;
-  background-color: rgb(192, 83, 83);
+footer .registrati a:hover{
+  text-decoration: underline;
+  background-color: rgb(186, 197, 233);
 }
+
+
+
+.speak-title{
+  font-size: 32px;
+  padding: 30px 10px;
+  color: rgb(142, 162,226);
+}
+
+.language span img{
+  width: 7%;
+  vertical-align: middle;
+}
+
+.language{
+  margin-bottom: 15px;
+  padding: 0 10px;
+  font-size: 10px;
+  color: rgb(142, 162,226);
+}
+
+.speak a{
+  padding: 0 10px;
+  color: white;
+}
+
+
+
+.speak .prodotto{
+  line-height: 30px;
+  padding: 30px 20px;
+}
+.prodotto span{
+  color: rgb(142, 162,226);
+}
+
+.prodotto ul li{
+  list-style: none;
+}
+
+
+
+.speak .compagnia{
+  line-height: 30px;
+  padding: 30px 20px;
+}
+.compagnia span{
+  color: rgb(142, 162,226);
+}
+
+.speak .compagnia ul li{
+  list-style: none;
+}
+
+
+
+.speak .risorse{
+  line-height: 30px;
+  padding: 30px 20px;
+}
+.risorse span{
+  color: rgb(142, 162,226);
+}
+
+.speak .risorse ul li{
+  list-style: none;
+}
+
+
+
+
+.speak .norme{
+  line-height: 30px;
+  padding: 30px 20px;
+}
+.norme span{
+  color: rgb(142, 162,226);
+}
+
+.speak .norme ul li{
+  list-style: none;
+}
+
+/*/section-logo footer*/
+/*/footer*/
