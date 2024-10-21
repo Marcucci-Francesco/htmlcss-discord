@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /*header*/
 /*top*/
 header{
-  background-color:  rgba(79,198,202,.2);
+  background-color:  rgb(46, 96, 224);
 }
 
 .top{
@@ -19,7 +23,7 @@ header{
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  background-color: yellow;
+  background-color: rgb(46, 96, 224);
 }
 
 .row{
@@ -34,9 +38,24 @@ header .link{
   width: 50%;
 }
 
+header .link a{
+  padding: 20px;
+  color: white;
+}
+
 header .login{
   width: 25%;
   text-align: right;
+}
+
+header .login a{
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 25px;
+  text-align: center;
 }
 
 header .container .row{
@@ -53,24 +72,69 @@ header nav ul{
 header nav ul a{
   text-decoration: none;
   padding: 0 10px;
+  display: inline-block;
 }
 /*/top*/
 
 /*jambo*/
 .jambo{
-  background-color: blue;
-  min-height: 300px;      /*debug*/
+  background-image: url(../../img/jumbo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container-jambo{
-  width: 60%;
+  width: 57%;
   max-width: 1100px;
   margin: 0 auto;
-  background-color: red;
   min-height: 200px;      /*debug*/
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 150px;
+}
+
+.container-jambo h1{
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.container-jambo p{
+  margin-bottom: 25px;
+  line-height: 30px;
+  font-size: 19px;
+}
+
+.container-jambo .link{
+  display: inline-block;
+  font-size: 14px;
+  width: 100%;
+}
+
+.container-jambo .link a{
+  text-decoration: none;
+}
+
+.container-jambo .link a{
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+}
+
+.container-jambo .link .browser{
+  color: white;
+  border: 1px solid rgb(34,40,42);
+  border-radius: 25px;
+  background-color: rgb(34,40,42);
+  margin: 0 30px;
+  display: inline-block;
 }
 /*/jambo*/
 /*/header*/
@@ -86,7 +150,7 @@ header nav ul a{
 .container-study{
   width: 80%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 50px auto;
   background-color: green;
   min-height: 300px;      /*debug*/
   display: flex;
@@ -95,12 +159,28 @@ header nav ul a{
 main .study-img{
   width: 60%;
   background-color: rgb(24, 124, 191);
+  padding: 150px 50px;
 }
 
 main .study-text{
   width: 40%;
   background-color: rgb(219, 144, 157);
+  padding-top: 170px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
+
+main .study-title{
+  font-size: 45px;
+  margin-bottom: 25px;
+  line-height: 56px;
+}
+
+main .study-p{
+  font-size: 18px;
+  line-height: 25px;
+}
+
 /*section-study*/
 
 /*section-dove*/
@@ -114,7 +194,7 @@ main .study-text{
 .container-dove{
   width: 80%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 50px auto;
   min-height: 300px;      /*debug*/
   display: flex;
 }
@@ -122,11 +202,26 @@ main .study-text{
 main .dove-img{
   width: 60%;
   background-color: rgb(24, 124, 191);
+  padding: 150px 0px;
 }
 
 main .dove-text{
   width: 40%;
   background-color: rgb(219, 144, 157);
+  padding-top: 170px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+main .dove-title{
+  font-size: 45px;
+  margin-bottom: 25px;
+  line-height: 56px;
+}
+
+main .dove-p{
+  font-size: 18px;
+  line-height: 25px;
 }
 /*/section-dove*/
 
@@ -140,7 +235,7 @@ main .dove-text{
 .container-fandom{
   width: 80%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 50px auto;
   min-height: 300px;      /*debug*/
   display: flex;
 }
@@ -148,11 +243,26 @@ main .dove-text{
 main .fandom-img{
   width: 60%;
   background-color: rgb(24, 124, 191);
+  padding: 150px 0px;
 }
 
 main .fandom-text{
   width: 40%;
   background-color: rgb(219, 144, 157);
+  padding-top: 170px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+main .fandom-title{
+  font-size: 45px;
+  margin-bottom: 25px;
+  line-height: 56px;
+}
+
+main .fandom-p{
+  font-size: 18px;
+  line-height: 25px;
 }
 /*/fandom*/
 
@@ -168,9 +278,45 @@ main .fandom-text{
 .container-tecno{
   width: 80%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 50px auto;
   background-color: green;
   min-height: 400px;       /*debug*/
+  text-align: center;
+}
+ .title-tec{
+  font-size: 45px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  line-height: 56px;
+ }
+
+ .text-tec{
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0 60px;
+ }
+
+ .cda{
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  min-height: 60px;
+  background-image: url(../../img/stars.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+
+ .cda-link{
+  margin-bottom: 40px;
+ }
+
+ .cda-link a{
+  text-decoration: none;
+  border: 1px solid rgb(142, 162,226);
+  border-radius: 25px;
+  padding: 10px 10px;
+  background-color: rgb(142, 162,226);
+  color: white;
 }
 /*/tecnologia*/
 /*/main*/
