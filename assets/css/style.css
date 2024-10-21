@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*header*/
+/*top*/
+header{
+  background-color:  rgba(79,198,202,.2);
+}
+
+.top{
+  min-height: 50px;   /*debug*/
+  padding: 10px 0;
+}
+
+.container{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+.row{
+  display: flex;
+}
+
+header .logo{
+  width: 25%;
+}
+
+header .link{
+  width: 50%;
+}
+
+header .login{
+  width: 25%;
+  text-align: right;
+}
+
+header .container .row{
+  height: 50px;           /*debug*/
+  align-items: center;
+}
+
+header nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: center; 
+}
+
+header nav ul a{
+  text-decoration: none;
+  padding: 0 10px;
+}
+/*/top*/
+
+/*jambo*/
+.jambo{
+  background-color: blue;
+  min-height: 300px;      /*debug*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-jambo{
+  width: 60%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: red;
+  min-height: 200px;      /*debug*/
+}
+/*/jambo*/
+/*/header*/
+
+/*main*/
+/*section-study*/
+.study{
+  display: flex;
+  align-items: center;
+  min-height: 400px;       /*debug*/
+}
+
+.container-study{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: green;
+  min-height: 300px;      /*debug*/
+  display: flex;
+}
+
+main .study-img{
+  width: 60%;
+  background-color: rgb(24, 124, 191);
+}
+
+main .study-text{
+  width: 40%;
+  background-color: rgb(219, 144, 157);
+}
+/*section-study*/
+
+/*section-dove*/
+.dove{
+  display: flex;
+  align-items: center;
+  min-height: 400px;       /*debug*/
+  background-color: lightgray;
+}
+
+.container-dove{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 300px;      /*debug*/
+  display: flex;
+}
+
+main .dove-img{
+  width: 60%;
+  background-color: rgb(24, 124, 191);
+}
+
+main .dove-text{
+  width: 40%;
+  background-color: rgb(219, 144, 157);
+}
+/*/section-dove*/
+
+/*section-fandom*/
+.fandom{
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+}
+
+.container-fandom{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 300px;      /*debug*/
+  display: flex;
+}
+
+main .fandom-img{
+  width: 60%;
+  background-color: rgb(24, 124, 191);
+}
+
+main .fandom-text{
+  width: 40%;
+  background-color: rgb(219, 144, 157);
+}
+/*/fandom*/
+
+/*tecnologia*/
+.tecnologia{
+  background-color: lightgray;
+  min-height: 500px;      /*debug*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-tecno{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: green;
+  min-height: 400px;       /*debug*/
+}
+/*/tecnologia*/
+/*/main*/
+
+/*footer*/
+/*section-speak*/
+.speak{
+  display: flex;
+  align-items: center;
+  min-height: 500px;       /*debug*/
+  background-color: rgba(0, 0, 0, 0.921);
+}
+
+.container-speak{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 450px;      /*debug*/
+  display: flex;
+  color: white;
+}
+
+footer .col-speak{
+  width: calc(100% - 760px);
+  background-color: rgb(24, 124, 191);
+}
+
+footer .prodotto{
+  width: 190px;
+  background-color: rgb(219, 144, 157);
+}
+
+footer .compagnia{
+  width: 190px;
+  background-color: rgb(219, 217, 144);
+}
+
+footer .risorse{
+  width: 190px;
+  background-color: rgb(156, 20, 166);
+}
+
+footer .norme{
+  width: 190px;
+  background-color: rgb(33, 96, 43);
+}
+/*/section-speak*/
+
+/*section-logo-footer*/
+.foot{
+  min-height: 100px;   /*debug*/
+  background-color: rgba(0, 0, 0, 0.921);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.row-foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;     /*debug*/
+}
+
+.container-foot{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: yellow;
+  min-height: 50px;    /*debug*/
+}
+
+footer .foot-logo{
+  border: 1px solid black;
+  background-color: rgb(192, 83, 83);
+}
+
+footer .registrati{
+  border: 1px solid black;
+  background-color: rgb(192, 83, 83);
+}
