@@ -15,7 +15,6 @@ header{
 }
 
 .top{
-  min-height: 50px;   /*debug*/
   padding: 10px 0;
 }
 
@@ -45,6 +44,7 @@ header .link{
 header .link a{
   padding: 20px;
   color: white;
+  display: inline-block;
 }
 
 header .login{
@@ -68,7 +68,6 @@ header .login a:hover{
 }
 
 header .container .row{
-  min-height: 50px;           /*debug*/
   align-items: center;
 }
 
@@ -89,16 +88,24 @@ header nav ul a:hover{
   text-decoration: underline;
 }
 
+header .logo img{
+  width: 50%;
+}
+
 /*/top*/
 
 /*jambo*/
 .jambo{
   background-image: url(../../img/jumbo.png);
-  background-size: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .container-jambo{
   width: 57%;
@@ -323,8 +330,12 @@ main .fandom-p{
   margin-top: 25px;
   min-height: 60px;
   background-image: url(../../img/stars.svg);
-  background-size: 60%;
+  background-size: contain;
   background-repeat: no-repeat;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 60px;
  }
 
  .cda-link{
